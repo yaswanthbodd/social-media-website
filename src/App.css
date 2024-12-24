@@ -1,0 +1,73 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+/* Navbar container */
+.navbar {
+  font-family: Arial, sans-serif;
+  background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: flex-end; /* Align all items to the right */
+  align-items: center;
+  padding: 0.5rem 1rem;
+  position: sticky; /* Keeps the navbar on top */
+  top: 0; /* Navbar is pinned to the top of the viewport */
+  z-index: 1000; /* Ensure it stays above other content */
+  gap: 1rem; /* Spacing between elements */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Title (NavBar text) styling */
+.navbar h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #61dafb;
+}
+
+/* Navigation links */
+.navbar a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.1rem;
+  transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+  color: #61dafb;
+}
+
+/* User information styling */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.user-info p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.user-info img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid #61dafb;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
